@@ -31,7 +31,7 @@ jobs:
         cmd:  Install
         
     - name: CREATING BUILD
-      uses: yarn build
+      uses: npm build
       
     - name: Installing Surge
       uses: npm install -g surge
