@@ -33,10 +33,10 @@ jobs:
         cmd: install 
         
     - name: CREATING BUILD
-      uses: yarn build
+      run: yarn build
       
     - name: Installing Surge
-      uses: npm install -g surge
+      run: npm install -g surge
       
     - name: Deploying on surge
       run : surge ./build http://class2-creator.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
