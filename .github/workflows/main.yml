@@ -37,6 +37,6 @@ jobs:
       uses: npm install -g surge
       
     - name: Deploying on surge
-      uses: surge ./build http://class2-creator.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
+      run : surge ./build http://class2-creator.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
      
             
